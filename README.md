@@ -30,25 +30,27 @@ Expected:
 ```bash
 $ ./word-search.js
 Usage: 10.js [searchterm]
-$ ./word-search.js app
-Usage: 10.js [searchterm]
-Appalachia
-Appalachian
-appall
-appalling
-appallingly
-appallment
-appalment
-appanage
-appanagist
-apparatus
-$ ./10.js JAVA
+$ ./word-search.js JAVA
 Java
 Javahai
 javali
 Javan
 Javanee
 Javanese
+$ ./word-search script
+script
+scription
+scriptitious
+scriptitiously
+scriptitory
+scriptive
+scriptor
+scriptorial
+scriptorium
+scriptory
+$ ./word-search node
+node
+noded
 ```
 
 ## Bonus
