@@ -55,11 +55,12 @@ noded
 
 ## Bonus
 
--   Optionally accept the wordlist as stdin with no argument given
-    `cat file | ./word-search.js`
+-   Optionally accept a custom wordlist as stdin
+    `cat /usr/share/dict/words | ./word-search.js flex`
+-   Allow for regex searches `./word-search.js /ception$/`
 -   Write another `Transform` module `hackerTyper` to stream each letter to the
     terminal every 50 ms
--   Try another popular stream library: Highland.js
+-   Try another popular stream library: [Highland.js][highland]
 -   If you search for something at the beginning of the alphabet, like 'a' or
     'aal', there is a slight delay before the program exits while the stream
     continues through the wordlist even though the app has printed the 10
