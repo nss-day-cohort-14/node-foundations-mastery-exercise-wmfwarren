@@ -13,7 +13,8 @@ system, you can use one from GitHub such as: https://github.com/atebits/Words
 
 Allow an argument to be passed to this program which should be used as a search
 term. The case of the search term should not matter. If no argument is passed,
-respond only with a simple [usage message][usage].
+respond only with a simple [usage message][usage]. The search term should be
+used to find words that begin with the search term.
 
 Limit the results to only ten words and case should not matter.
 
