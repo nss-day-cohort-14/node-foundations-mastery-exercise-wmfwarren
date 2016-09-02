@@ -15,12 +15,12 @@ const searchRegExp = new RegExp(`^${searchTerm}`, 'i');
 //create the read stream
 const readStream = createReadStream("/usr/share/dict/words");
 
-if(process.argv.length === 2){
+if(!searchTerm){
   console.log("To search please enter: ./word-search.js [seachTerm]");
   process.exit();
 }
 
-readStream.pipe(es.split('\n'))
+readStream.pipe(es.split())
 .pipe(es.map((datum, callback) => {
   if(datum.toString().search(searchRegExp) === 0){
     callback (null, `${datum}\n`)
